@@ -7,6 +7,8 @@ public class WeaponScript : MonoBehaviour {
     public Transform shotPrefab;
     public float shootingRate = 0.25f;
 
+    public Transform shotSpawnPos;
+
 
 
     private float shootCooldown;
@@ -34,7 +36,7 @@ public class WeaponScript : MonoBehaviour {
             var shotTransform = Instantiate(shotPrefab) as Transform;
 
             // Assign position
-            shotTransform.position = transform.position;
+            shotTransform.position = shotSpawnPos.position;
 
             // The is enemy property
             ShotScript shot = shotTransform.gameObject.GetComponent<ShotScript>();
