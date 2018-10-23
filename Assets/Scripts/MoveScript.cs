@@ -9,6 +9,9 @@ public class MoveScript : MonoBehaviour
 {
     // 1 - Designer variables
 
+    public bool sexymove = true;
+    public bool isIdiot = false;
+
     /// <summary>
     /// Object speed
     /// </summary>
@@ -22,6 +25,7 @@ public class MoveScript : MonoBehaviour
     private Vector2 movement;
     private Rigidbody2D rigidbodyComponent;
 
+
     void Update()
     {
         // 2 - Movement
@@ -32,7 +36,7 @@ public class MoveScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (rigidbodyComponent == null) rigidbodyComponent = GetComponent<Rigidbody2D>();
+        if (rigidbodyComponent == null && sexymove) rigidbodyComponent = GetComponent<Rigidbody2D>();
 
         // Apply movement to the rigidbody
         rigidbodyComponent.velocity = movement;
