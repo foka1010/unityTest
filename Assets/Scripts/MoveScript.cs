@@ -13,7 +13,7 @@ public class MoveScript : MonoBehaviour
     public bool isIdiot = false;
 
     public bool testiewstie = true;
-    pbulic float uslessnumber = 1;
+    public float uslessnumber = 1;
 
     /// <summary>
     /// Object speed
