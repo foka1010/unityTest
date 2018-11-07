@@ -12,6 +12,8 @@ public class MoveScript : MonoBehaviour
     public bool sexymove = true;
     public bool isIdiot = false;
 
+    public bool testiewstie = true;
+
     /// <summary>
     /// Object speed
     /// </summary>
